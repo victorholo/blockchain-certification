@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Certificate(props) {
-  const { title, name, date, hash, logo } = props;
+  const { title, name, date, hash, logo, logo2 } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +20,10 @@ function Certificate(props) {
         id="border"
       />
       <text x="500" y="100" text-anchor="middle" fill="black" id="bodyTitle">
-        Certificate
+        Certificate of Participation
       </text>
       <text x="500" y="125" text-anchor="middle" fill="black" id="bodySubTitle">
-        of
+        for
       </text>
       <line x1="250" y1="260" x2="750" y2="260" id="titleUnderLine" />
       <text x="500" y="250" text-anchor="middle" fill="black" id="title">
@@ -53,12 +53,20 @@ function Certificate(props) {
         ID: {hash}
       </text>
       <image
-        x="725"
+        x="650"
         y="500"
         height="80px"
         width="120px"
         id="logo"
         href={logo}
+      />
+      <image
+        x="765"
+        y="500"
+        height="80px"
+        width="120px"
+        id="logo2"
+        href={logo2}
       />
       Sorry, your browser does not support inline SVG.
     </svg>

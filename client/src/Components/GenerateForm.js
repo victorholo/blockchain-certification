@@ -80,8 +80,8 @@ class GenerateForm extends React.Component {
   state = {
     firstname: "",
     lastname: "",
-    organization: "FossAsia",
-    orgLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/600px-FOSSASIA_Logo.svg.png",
+    organization: "",
+    orgLogo: "https://www.aut.upt.ro/~ifilip/logo.jpg",
     coursename: "",
     assignedOn: null,
     duration: 0,
@@ -186,9 +186,7 @@ class GenerateForm extends React.Component {
                   defaultValue={organization}
                   margin="normal"
                   variant="outlined"
-                  InputProps={{
-                    readOnly: true
-                  }}
+                  onChange={this.handleChange("organization")}
                 />
                 <TextField
                   required

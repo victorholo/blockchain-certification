@@ -189,7 +189,7 @@ class NavBar extends React.Component {
               color="inherit"
               noWrap
             >
-              CertifyBlock
+              Carmen Credentials
             </Typography>
             <div className={classes.search}>
               <div className={classes.searchIcon}>

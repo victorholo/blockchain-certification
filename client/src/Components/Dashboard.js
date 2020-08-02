@@ -76,7 +76,8 @@ class Dashboard extends React.Component {
       expirationDate: null
     },
     logo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/600px-FOSSASIA_Logo.svg.png"
+      "https://www.aut.upt.ro/~ifilip/logo.jpg",
+      logo2: "http://www.opiniatimisoarei.ro/wp-content/uploads/2018/10/cel-20-ani.jpg"
   };
 
   verification = () => {
@@ -120,7 +121,8 @@ class Dashboard extends React.Component {
       loading,
       pageLoad,
       certificateId,
-      logo
+      logo,
+      logo2
     } = this.state;
     const {
       candidateName,
@@ -143,6 +145,7 @@ class Dashboard extends React.Component {
                 date={assignDate}
                 hash={certificateId}
                 logo={logo}
+                logo2={logo2}
               />
             )}
           </Paper>
